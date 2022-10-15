@@ -8,3 +8,6 @@ repositories:
     type: git
     url: https://github.com/ros2/examples.git
     version: humble
+  roboclaw:
+    type: git
+    url: https://github.com/ProjectLadon/roboclaw.git

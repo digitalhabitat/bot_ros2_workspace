@@ -13,6 +13,12 @@
 		"--security-opt=seccomp:unconfined",
 		"--security-opt=apparmor:unconfined",
 		"--volume=/tmp/.X11-unix:/tmp/.X11-unix",
+		"--privileged"
+	],
+	"mounts": [
+		"source=/etc/udev/rules.d,target=/etc/udev/rules.d,type=bind",
+		"source=/run/udev/,target=/run/udev/,type=bind",
+		"source=/dev/,target=/dev/,type=bind"
 	],
 	"containerEnv": {
 		"DISPLAY": "${localEnv:DISPLAY}",
