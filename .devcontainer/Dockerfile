@@ -80,6 +80,8 @@ ENV AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS=1
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update \
     && apt-get -y install --no-install-recommends curl \
+    ros-humble-teleop-twist-keyboard \
+    libboost-sys* \
     #
     # Clean up
     && apt-get autoremove -y \

@@ -12,7 +12,7 @@ ros2 topic pub /roboclaw/claw0/motor_vel_cmd roboclaw/msg/MotorVelocity "{index:
 ros2 topic pub /roboclaw/claw0/motor_vel_cmd roboclaw/msg/MotorVelocity "{index: 0, mot1_vel_sps: 1000, mot2_vel_sps: 1000}"
 
 
-ros2 run roboclaw diffdrive_node --ros-args -p base_width:=0.3556 -p steps_per_meter:=74000.0 -r /motor_cmd_vel:=/roboclaw/claw0/motor_vel_cmd
+ros2 run roboclaw diffdrive_node --ros-args -p base_width:=0.350 -p steps_per_meter:=74659.37 -r /motor_cmd_vel:=/roboclaw/claw0/motor_vel_cmd
 
         this->declare_parameter<float>("base_width",       1.0f);
         this->declare_parameter<float>("steps_per_meter",  1000.0f);
