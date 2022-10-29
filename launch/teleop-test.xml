@@ -14,5 +14,4 @@
 
     <!-- #todo <node pkg="teleop_twist_keyboard" exec="teleop_twist_keyboard" output="screen"> -->
 
-    </node>
 </launch>
